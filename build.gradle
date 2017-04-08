@@ -12,6 +12,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 version = '0.0.1-SNAPSHOT'
@@ -23,7 +24,8 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compileOnly('org.projectlombok:lombok')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('com.jayway.jsonpath:json-path')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
