@@ -6,7 +6,6 @@ Below are described current plans to develop it.
 
 Story #1: As an APP_USER I want to create neuron with given number of inputs and get basic information about it.
 Tasks:
-1. Create NeuronController with rest endpoint with query param $inputsCount
 2. Create NeuronDTO and DendriteDTO with input and weight fields (use lombok)
 3. Create NeuronTranslator to serialize Neuron into NeuronDTO
 4. TDD implement serialization method
