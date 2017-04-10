@@ -17,6 +17,7 @@ public class Neuron {
         this.weights = new double[inputsCount + 1];
         this.inputs = new double[inputsCount];
         this.activationFunction = activationFunction;
+        this.bias = 1;
         resetWeights();
     }
 
@@ -32,4 +33,23 @@ public class Neuron {
         System.arraycopy(values, 0, inputs, 0, values.length);
     }
 
+    public int getInputsCount() {
+        return inputs.length;
+    }
+
+    public double getInput(int index) {
+        return inputs[index];
+    }
+
+    public double getWeight(int index) {
+        return weights[index];
+    }
+
+    public double getBias() {
+        return bias;
+    }
+
+    public double getBiasWeight() {
+        return weights[inputs.length];
+    }
 }

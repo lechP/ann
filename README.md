@@ -4,13 +4,6 @@ Below are described current plans to develop it.
 
 **TODO**
 
-Story #1: As an APP_USER I want to create neuron with given number of inputs and get basic information about it.
-Tasks:
-2. Create NeuronDTO and DendriteDTO with input and weight fields (use lombok)
-3. Create NeuronTranslator to serialize Neuron into NeuronDTO
-4. TDD implement serialization method
-5. Inside Controller create neuron, set some inputs and return data to the view
-
 Story #2: As an NN_ADEPT I want to learn about book's codebase.
 Tasks:
 1. The NeuralLayer class (01:09 mins)

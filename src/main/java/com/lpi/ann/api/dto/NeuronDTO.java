@@ -1,11 +1,13 @@
 package com.lpi.ann.api.dto;
 
+import java.util.List;
 import lombok.Data;
 
 @Data
 public class NeuronDTO {
 
-    private String name;
     private int numberOfInputs;
+    private List<DendriteDTO> dendrites;
+    private DendriteDTO biasDendrite;
 
 }
